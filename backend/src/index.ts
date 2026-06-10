@@ -43,3 +43,5 @@ if (fs.existsSync(publicDir)) {
 }
 
 app.listen(env.PORT, () => console.log("listen on port", env.PORT));
+
+// DATABASE_URL="postgresql://neondb_owner:npg_6swRlegiVo8Y@ep-dawn-bread-aoig5tq2-pooler.c-2.ap-southeast-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require"
