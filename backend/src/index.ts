@@ -30,9 +30,9 @@ app.post("webhooks/clerk", rawJson, (req, res) => {
   void clerkWebhookHandler(req, res);
 });
 
-// app.post("webhooks/polar", rawJson, (req, res)=> {
-//     void polarWebhookHandler(req, res)
-// })
+app.post("webhooks/polar", rawJson, (req, res) => {
+  void polarWebhookHandler(req, res);
+});
 
 app.use(express.json());
 app.use(cors());
@@ -95,5 +95,3 @@ app.listen(env.PORT, () => {
     keepliveCron.start();
   }
 });
-
-// DATABASE_URL="postgresql://neondb_owner:npg_6swRlegiVo8Y@ep-dawn-bread-aoig5tq2-pooler.c-2.ap-southeast-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require"
